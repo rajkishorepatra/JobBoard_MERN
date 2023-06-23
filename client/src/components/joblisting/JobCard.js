@@ -1,16 +1,32 @@
-import React from 'react'
-import { Card, Grid, Text, Badge, Input, Row, Button, Modal, useModal } from "@nextui-org/react";
+import React,{useState} from 'react'
+import { Card, Grid, Text, Badge, Input, Button, Modal, useModal } from "@nextui-org/react";
 
 
 function JobCard() {
+    const[name, setName] = useState(""); 
+    const[email, setEmail] = useState(""); 
+    const[num, setNum] = useState(""); 
+    const[url, setUrl] = useState("");
+    const obj={
+       "name":name,
+       "email":email,
+       "number":num,
+       "linkedIn":url
+   }
+
     const { setVisible, bindings } = useModal();
     const [visible, setVVisible] = React.useState(false);
     const handler = () => setVVisible(true);
 
     const closeHandler = () => {
         setVVisible(false);
-        console.log("closed");
+        console.log(obj);
     };
+
+
+    // function handle() {
+    //     alert(value)
+    // }
 
     return (
         <>
@@ -124,6 +140,8 @@ function JobCard() {
                             color="primary"
                             size="lg"
                             labelPlaceholder="Name"
+                            value={name} 
+                            onChange={(e) => {setName(e.target.value)}}
                         />
                     </div>
                     <div className='my-3'>
@@ -134,16 +152,8 @@ function JobCard() {
                             color="primary"
                             size="lg"
                             labelPlaceholder="Email"
-                        />
-                    </div>
-                    <div className='my-3'>
-                        <Input
-                            clearable
-                            bordered
-                            fullWidth
-                            color="primary"
-                            size="lg"
-                            labelPlaceholder="Qualification"
+                            value={email} 
+                            onChange={(e) => {setEmail(e.target.value)}}
                         />
                     </div>
                     <div className='my-3'>
@@ -154,6 +164,8 @@ function JobCard() {
                             color="primary"
                             size="lg"
                             labelPlaceholder="Contact Number"
+                            value={num} 
+                            onChange={(e) => {setNum(e.target.value)}}
                         />
                     </div>
 
@@ -165,6 +177,8 @@ function JobCard() {
                             color="primary"
                             size="lg"
                             labelPlaceholder="LinkedIn URL"
+                            value={url} 
+                            onChange={(e) => {setUrl(e.target.value)}}
                         />
                     </div>
 

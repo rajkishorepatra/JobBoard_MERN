@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Button, Link, Text } from "@nextui-org/react";
+import { Navbar, Link, Text } from "@nextui-org/react";
 import { Layout } from "./navComp/Layout";
 
 function NAvbar() {
@@ -22,7 +22,7 @@ function NAvbar() {
         </Navbar.Brand>
         <Navbar.Content enableCursorHighlight hideIn="xs" variant="highlight-rounded">
           <Navbar.Link href="#comp">Top Companies</Navbar.Link>
-          <Navbar.Link href="#">Jobs</Navbar.Link>
+          <Navbar.Link href="/jobs">Jobs</Navbar.Link>
           <Navbar.Link href="#cat">Category</Navbar.Link>
 
           {/* <Navbar.Link href="#post">Post Job</Navbar.Link> */}
