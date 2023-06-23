@@ -1,8 +1,15 @@
 import './App.css';
+import JobListing from './pages/JobListing';
+import Landing from './pages/Landing';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
-    <>This is app.js</>
+    <>
+    <JobListing/>
+    {/* <Landing/> */}
+    </>
   );
 }
 
