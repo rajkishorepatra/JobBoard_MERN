@@ -29,7 +29,7 @@ function Signin() {
         const data = await response.json();
         alert("You are logged in!");
         localStorage.setItem("token", data.token);
-        navigate("/");
+        navigate("/dashboard");
       }
     } catch (error) {
       alert(error.msg);

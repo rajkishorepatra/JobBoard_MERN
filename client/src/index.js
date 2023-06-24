@@ -10,6 +10,7 @@ import { NextUIProvider } from '@nextui-org/react';
 import JobListing from './pages/JobListing';
 import Signup from './pages/signup/signup';
 import Signin from './pages/signin/signin';
+import Dashboard from './pages/Dashboard';
 
 AOS.init();
 
@@ -23,6 +24,7 @@ root.render(
         <Route path="/login" element={<Signin/>} />
         <Route path="/signup" element={<Signup/>} />
         <Route path='/jobs' element={<JobListing />} />
+        <Route path='/dashboard' element={<Dashboard/>} />
         {/* <App /> */}
       </Routes>
     </NextUIProvider>
