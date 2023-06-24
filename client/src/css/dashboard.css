@@ -1,0 +1,26 @@
+.submit{
+    background-color: #3ea41b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(217, 227, 26);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    background-size: cover;
+    background-image: url(https://www.intellicorp.net/marketing/getattachment/Resources/Blog/April-2020/Background-Screening-Self-Service-Portals-The-Bet/Now-Hiring-Image.jpg?width=500&height=354);
+    
+}
+.button {
+    background-color: #654caf; /* Green */
+    border: none;
+    color: rgb(49, 38, 38);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
