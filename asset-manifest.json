@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/jobBoard_MERN/static/css/main.7db620f0.css",
-    "main.js": "/jobBoard_MERN/static/js/main.65da4cc1.js",
+    "main.js": "/jobBoard_MERN/static/js/main.42162632.js",
     "static/media/hero-img.png": "/jobBoard_MERN/static/media/hero-img.217552cbff93cbd2b175.png",
     "static/media/globe.png": "/jobBoard_MERN/static/media/globe.f65a532b8eac9793d5f4.png",
     "index.html": "/jobBoard_MERN/index.html",
     "main.7db620f0.css.map": "/jobBoard_MERN/static/css/main.7db620f0.css.map",
-    "main.65da4cc1.js.map": "/jobBoard_MERN/static/js/main.65da4cc1.js.map"
+    "main.42162632.js.map": "/jobBoard_MERN/static/js/main.42162632.js.map"
   },
   "entrypoints": [
     "static/css/main.7db620f0.css",
-    "static/js/main.65da4cc1.js"
+    "static/js/main.42162632.js"
   ]
 }
