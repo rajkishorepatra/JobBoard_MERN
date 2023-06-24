@@ -132,26 +132,26 @@ function JobCard() {
                     </Text>
                 </Modal.Header>
                 <Modal.Body>
-                    <div className='my-3'>
+                    <div className=''>
                         <Input
                             // clearable
                             bordered
                             fullWidth
                             color="primary"
                             size="lg"
-                            labelPlaceholder="Name"
+                            placeholder="Name"
                             value={name} 
                             onChange={(e) => {setName(e.target.value)}}
                         />
                     </div>
-                    <div className='my-3'>
+                    <div className=''>
                         <Input
                             clearable
                             bordered
                             fullWidth
                             color="primary"
                             size="lg"
-                            labelPlaceholder="Email"
+                            placeholder="Email"
                             value={email} 
                             onChange={(e) => {setEmail(e.target.value)}}
                         />
@@ -163,7 +163,7 @@ function JobCard() {
                             fullWidth
                             color="primary"
                             size="lg"
-                            labelPlaceholder="Contact Number"
+                            placeholder="Contact Number"
                             value={num} 
                             onChange={(e) => {setNum(e.target.value)}}
                         />
@@ -176,7 +176,7 @@ function JobCard() {
                             fullWidth
                             color="primary"
                             size="lg"
-                            labelPlaceholder="LinkedIn URL"
+                            placeholder="LinkedIn URL"
                             value={url} 
                             onChange={(e) => {setUrl(e.target.value)}}
                         />

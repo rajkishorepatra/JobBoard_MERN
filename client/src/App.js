@@ -10,9 +10,9 @@ function App() {
   return (
     <>
       {/* <JobListing/> */}
-      {/* <Landing /> */}
-      <Navbar />
-      <AllRoutes />
+      <Landing />
+      {/* <Navbar />
+      <AllRoutes /> */}
     </>
   )
 }

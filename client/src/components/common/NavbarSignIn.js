@@ -2,14 +2,12 @@ import React from 'react'
 import { Navbar, Link, Text } from "@nextui-org/react";
 import { Layout } from "./navComp/Layout";
 
-function NAvbar() {
+function NavbarSignIn() {
   const collapseItems = [
     "Home",
     "Top Companies",
     "Category",
-    "Jobs",
-    "Login",
-    "Sign Up",
+    "Jobs"
   ];
 
   return (
@@ -26,12 +24,7 @@ function NAvbar() {
           <Navbar.Link href="#cat">Category</Navbar.Link>
 
           {/* <Navbar.Link href="#post">Post Job</Navbar.Link> */}
-          <Navbar.Link color="inherit" href="/login">
-            Login
-          </Navbar.Link>
-          <Navbar.Link color="inherit" href="/signup">
-            SignUp
-          </Navbar.Link>
+          
         </Navbar.Content>
         <Navbar.Collapse>
           {collapseItems.map((item, index) => (
@@ -54,4 +47,4 @@ function NAvbar() {
   )
 }
 
-export default NAvbar
+export default NavbarSignIn

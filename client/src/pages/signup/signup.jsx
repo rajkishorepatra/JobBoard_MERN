@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './signup.css'
+import NavbarSignup from "../../components/common/NavbarSignup";
 
 function Signup() {
   const [email, setEmail] = useState("");
@@ -40,16 +41,21 @@ function Signup() {
   };
 
   return (
-    <div class="main">
-    <div class="signup">
-      <label >Register</label>
-      <input type="text" placeholder="Enter Name" id="name"  value={name} onChange={(e) => setName(e.target.value)}/>
-    <input type="text" placeholder="Enter Email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-    <input type="password" placeholder="Enter Password" id="password" onChange={(e) => setPassword(e.target.value)} value={password}/>
-    <button onClick={handleSignup}>Create account</button>
-    <button>Login</button>
-  </div>
-</div>
+    <>
+      <NavbarSignup/>
+      <div className="bodyMain">
+        <div class="main">
+          <div class="signup">
+            <label >Register</label>
+            <input type="text" placeholder="Enter Name" id="name" value={name} onChange={(e) => setName(e.target.value)} />
+            <input type="text" placeholder="Enter Email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="password" placeholder="Enter Password" id="password" onChange={(e) => setPassword(e.target.value)} value={password} />
+            <button onClick={handleSignup}>Create account</button>
+            <button>Login</button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './signin.css'
+import NavbarSignIn from "../../components/common/NavbarSignIn";
 function Signin() {
   const navigate = useNavigate();
   const token = localStorage.getItem("token") || "";
@@ -35,15 +36,20 @@ function Signin() {
     }
   };
   return (
-    <div class="main">
-    <div class="signup">
-    <label >Login</label>
-    <input type="email" placeholder="Enter Email " id="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-    <input type="password" placeholder="Enter Password" id="password" onChange={(e) => setPassword(e.target.value)} value={password}/>
-    <button id="mybutton" onClick={handleLogin}>Login</button>
-    <button>Signup</button>
-    </div>
-</div>	
+    <>
+      <NavbarSignIn />
+      <div className="bodyMain">
+        <div class="main">
+          <div class="signup">
+            <label >Login</label>
+            <input type="email" placeholder="Enter Email " id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="password" placeholder="Enter Password" id="password" onChange={(e) => setPassword(e.target.value)} value={password} />
+            <button id="mybutton" onClick={handleLogin}>Login</button>
+            <button>Signup</button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
