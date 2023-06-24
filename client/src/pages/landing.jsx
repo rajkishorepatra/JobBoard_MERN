@@ -9,15 +9,17 @@ import Content2 from '../components/landing/Content2'
 import Footer from '../components/common/Footer'
 
 function Landing() {
+    document.body.style.overflowX = 'hidden';
+
     return (
         <>
             <NAvbar />
             <Hero />
             <Brands />
-            <Content1/>
-            <Category/>
-            <Content2/>
-            <Footer/>
+            <Content1 />
+            <Category />
+            <Content2 />
+            <Footer />
         </>
     )
 }

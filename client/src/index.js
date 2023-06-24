@@ -13,14 +13,13 @@ import Signin from './pages/signin/signin';
 import Dashboard from './pages/Dashboard';
 
 AOS.init();
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <BrowserRouter>
     <NextUIProvider>
       <Routes>
-        <Route index element={<App />} />
+        <Route path='/' exact element={<App />} />
         <Route path="/login" element={<Signin/>} />
         <Route path="/signup" element={<Signup/>} />
         <Route path='/jobs' element={<JobListing />} />

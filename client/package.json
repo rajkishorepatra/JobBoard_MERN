@@ -1,8 +1,8 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "http://rajkishorepatra.github.io/jobBoard_MERN",
-  "private": true,
+  "homepage": "https://rajkishorepatra.github.io/jobBoard_MERN",
+  "private": false,
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
     "@nextui-org/react": "^1.0.0-beta.13",
